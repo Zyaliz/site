@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>Astra Linux</title>
-<meta name="description" content="Linux">
-<meta name="keywords" content="Linux">
+<meta name="description" content="astralinux astra linux">
+<meta name="keywords" content="astralinux astra linux">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="copyright" content="Lepasa 2022">
 <meta name="author" content="Aleksandr Prilepskij">
@@ -16,6 +16,7 @@ margin: 0;
 body{
 background: #FAF2D6;
 color: #302E2D;
+font-family: Arial,Helvetica,sans-serif;
 }
 header{
 width: 100%;
@@ -36,8 +37,7 @@ color: #05519d;
 }
 .container{
 padding: 0 30px;
-font: 20px Open Sans;
-font-size: 100%;
+font-size: 16pt;
 }
 .container p{
 font-size: 16px;
@@ -172,7 +172,7 @@ border-bottom: 4px solid #009688;
 </header>
 -->
 <section class="page-header">
-  <h1 class="project-name"><a href="https://zyaliz.github.io/site/" style="text-decoration:none; color:inherit">Astra Linux</a></h1>
+  <h1 class="project-name"><a href="https://astralinux.ru/" style="text-decoration:none; color:inherit">Astra Linux</a></h1>
 </section>
 <!--  -->
 <!-- Menu -->
@@ -180,11 +180,32 @@ border-bottom: 4px solid #009688;
 <div class="container">
 <h2>AppImage</h2>
 <br>
-<p><b>AppImage</b> — формат для распространения переносимых приложений для <b>Linux</b></p>
+<b>AppImage</b> &#8212; формат для распространения переносимых приложений для <b>Linux</b>.<br>
+<b>AppImage</b> стремится стать системой запуска приложений для <b>Linux</b> со следующими целями: <b>простота, двоичная совместимость, независимость от дистрибутива, запуск без установки, запуск без прав суперпользователя, переносимость и сохранение операционной системы нетронутой</b>.<br>
+<br>
 <!--  -->
 <div class="acor-container">
 <input type="radio" name="acor" id="acor1" checked="checked">
-<label for="acor1">Как сделать файл исполняем в Astra Linux</label>
+<label for="acor1">Настройка Astra Linux после установки</label>
+<div class="acor-body">
+<p>Запускаем терминал и поочерёдно вводим следующие команды:</p>
+<p>sudo apt install nvidia-driver-470</p>
+<p>sudo apt install --reinstall intel-microcode</p>
+<p>sudo apt install ttf-mscorefonts-installer</p>
+<p>sudo apt install ffmpeg -y</p>
+<p>sudo apt install bluefish</p>
+<p>sudo apt-get install gcolor2 -y</p>
+<p>sudo apt-get install fly-calc</p>
+<p>sudo apt-get install fbreader</p>
+<p>sudo apt install deadbeef</p>
+<p>sudo apt install doublecmd-qt</p>
+<p>sudo apt install neofetch</p>
+<p>sudo apt install htop</p>
+<p>sudo apt-get install gcc g++ libc6-dev libsdl1.2-dev libgtk-3-dev unixodbc-dev libgnome2-dev libxine2-dev libwebkitgtk-3.0-dev libxxf86vm-dev libwebkitgtk-dev libwebkitgtk-3.0-dev</p>
+</div>
+
+<input type="radio" name="acor" id="acor2" checked="checked">
+<label for="acor2">Как сделать файл исполняем в Astra Linux</label>
 <div class="acor-body">
 <p>Сделать файл исполняемым для запуска можно с помощью графической оболочки.</p>
 <p>Нажмите по ярлыку правой кнопкой мыши. В контекстуальном меню выберите пункт «Свойства».</p>
@@ -197,15 +218,15 @@ border-bottom: 4px solid #009688;
 <p>или</p>
 <p>sudo chmod +x имя_файла</p>
 </div>
-<div class="acor-container">
-<input type="radio" name="acor" id="acor2" checked="checked">
-<label for="acor2">AppImageLauncher</label>
+
+<input type="radio" name="acor" id="acor3" checked="checked">
+<label for="acor3">AppImageLauncher</label>
 <div class="acor-body">
 <p>В разработке</p>
 </div>
 
-<input type="radio" name="acor" id="acor3">
-<label for="acor3">FreeUPX</label>
+<input type="radio" name="acor" id="acor4">
+<label for="acor4">FreeUPX</label>
 <div class="acor-body">
 <p>Сжатие исполняемых файлов</p>
 <img src="data/img/3.png" alt="Astra FreeUPX">
@@ -214,8 +235,8 @@ border-bottom: 4px solid #009688;
 <a href="data/files/FreeUPXLauncher" class="tag orange">FreeUPX Launcher</a>
 </div>
 
-<input type="radio" name="acor" id="acor4">
-<label for="acor4">CalcFOE</label>
+<input type="radio" name="acor" id="acor5">
+<label for="acor5">CalcFOE</label>
 <div class="acor-body">
 <p>Калькулятор для игры Forge of Empire</p>
 <img src="data/img/4.png" alt="Astra CalcFOE">
@@ -226,13 +247,18 @@ border-bottom: 4px solid #009688;
 </div>
 <!--  -->
 <br>
+<br>
+Теперь вы знаете, как интегрировать, запустить и удалить файлы <b>AppImage</b> с <b>AppImageLauncher</b> в <b>Linux</b>.<br>
+<br>
+Удачи.<br>
+<br>
 </div>
 <!--  -->
 <hr class="fat">
 <!-- Footer -->
 <footer class="footer">
-<address>Пример с сайта lepasa.ru</address>
-<center>Footer</center>
+<address>@ lepasa.ru</address>
+<center><a href="https://zyaliz.github.io/site/" class="tag orange">Astra Linux</a></center>
 </footer>
 <!--  -->
 </body>
