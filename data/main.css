@@ -20,6 +20,20 @@ border-bottom: 4px solid #FF9828;
 /* position: fixed; */
 }
 a{text-decoration:none; color: #1e6bb8;}
+/*-- CSS. --*/
+.link_button {
+  padding: 1px 3px;
+  border: 1px solid #CDECD3;
+  background: #E9FFEE;
+  border-radius: 6px;
+}
+.link_button:hover {
+  background: black;
+  color: #fff;
+}
+.link_button:active {
+  color: red;
+}
 /* background-color: transparent; */
 /* latin */
 @font-face{
@@ -109,7 +123,15 @@ border-bottom-left-radius: 4px;
 margin: 0 70px 0 0;
 text-decoration: none;
 }
+.tag:hover{
+background: black;
+color: #fff;
+}
+.tag:active{color: red;}
 .orange{background-color: #e45c21;}
+/*------------
+   ACOR
+------------*/
 .acor-container{margin: 20px 0;}
 .acor-container .acor-body{
 width: calc(100% - 40px);
