@@ -26,7 +26,13 @@ a{text-decoration:none; color: #1e6bb8;}
 font-family: 'Monoton';
 font-style: normal;
 font-weight: 400;
-src: url(https://fonts.gstatic.com/s/monoton/v10/5h1aiZUrOngCibe4TkHLQg.woff2) format('woff2');
+src: url(../data/src/Monoton.woff2) format('woff2');
+}
+@font-face{
+font-family: 'Fyodor Bold Oblique';
+font-style: normal;
+font-weight: 400;
+src: url(../data/src/fyodor-bold-oblique.woff2) format('woff2');
 }
 
 .container{
@@ -43,13 +49,21 @@ margin-bottom: .1rem;
 font-weight: 400;
 font-family: Monoton,Helvetica,Arial,sans-serif;
 font-size: 6rem;
+text-shadow: 1px 1px 0 #f1e9e9, 2px 2px 0 #4e4a4a;
 /*
 background: #5c258d;
 background: -webkit-linear-gradient(to left,#5c258d ,#4389a2);
 background: linear-gradient(120deg,#5c258d ,#4389a2);
 */
 }
-
+.name-2{
+text-align: center;
+margin-top: 50;
+margin-bottom: .1rem;
+font-weight: 400;
+font-family: Fyodor Bold Oblique,Helvetica,Arial,sans-serif;
+font-size: 2rem;
+}
 .page-header{
 color: #fff;
 text-align: center;
