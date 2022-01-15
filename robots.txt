@@ -1,0 +1,3 @@
+User-agent: Yandex
+Allow: /
+Sitemap: https://zyaliz.github.io/site/sitemap.xml
