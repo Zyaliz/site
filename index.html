@@ -31,13 +31,13 @@ accurateTrackBounce:true
 <noscript><div><img src="https://mc.yandex.ru/watch/87150699" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <!-- Header -->
-
+<a name="top"></a>
 <header class="page-header">
-<h1 class="name"><a href="https://astralinux.ru/">Astra Linux</a></h1>
+<h1 class="name noselect"><a href="https://astralinux.ru/">Astra Linux</a></h1>
 <h2 class="name-2">Учимся работать в Astra Linux</h2>
 </header>
 <!--
-
+<a href="https://www.startisback.com"><img src="clover.svg" width="32" height="32" title="StartIsBack for Windows 10"></a>
 -->
 <!--  -->
 <!-- Menu -->
@@ -49,7 +49,7 @@ accurateTrackBounce:true
 
 <!--  -->
 <div class="container">
-<h2>AppImage</h2>
+<h2>Расширение файла AppImage</h2>
 <br>
 <b>AppImage</b> &#8212; это переносимый, исполняемый файл приложения для <b>Linux</b>. Аналог .exe в <b>Windows</b>
 <br>
@@ -58,7 +58,8 @@ accurateTrackBounce:true
 <br>
 Формат <b>AppImage</b> это система запуска приложений для <b>Linux</b> преследующая цели: <b>простота в использовании, совместимость со всеми Linux, независимость от дистрибутива, запуск без установки, запуск без root прав, переносимость файла <b>AppImage</b> и сохранение операционной системы без изменений</b>.<br>
 При удалении файда <b>AppImage</b> удаляется и само приложение.
-Прежде чем запустить скачанный файл <b>AppImage</b> необходимо сделать его исполняем.
+Прежде чем запустить скачанный файл <b>AppImage</b> необходимо сделать его 
+<a href="#exe" target="_self">исполняем</a>.
 <br>
 <!--  -->
 <div class="acor-container">
@@ -66,9 +67,9 @@ accurateTrackBounce:true
 <label for="acor1">Настройка Astra Linux после установки</label>
 <div class="acor-body">
 <p>Запускаем терминал и поочерёдно вводим следующие команды:</p>
-<p>sudo apt install nvidia-driver-470</p>
+<p style="color:green;">sudo apt install nvidia-driver-470</p>
 <p>sudo apt install --reinstall intel-microcode</p>
-<p>sudo apt install ttf-mscorefonts-installer</p>
+<p style="color:green;">sudo apt install ttf-mscorefonts-installer</p>
 <p>sudo apt install ffmpeg -y</p>
 <p>sudo apt install bluefish</p>
 <p>sudo apt-get install gcolor2 -y</p>
@@ -94,6 +95,8 @@ accurateTrackBounce:true
 <p>about:support</p>
 </div>
 
+<section>
+<a name="exe"></a>
 <input type="radio" name="acor" id="acor2" checked="checked">
 <label for="acor2">Как сделать файл исполняем в Astra Linux</label>
 <div class="acor-body">
@@ -109,18 +112,21 @@ accurateTrackBounce:true
 <p>или</p>
 <p>sudo chmod +x имя_файла</p>
 </div>
+</section>
+<section>
 <input type="radio" name="acor" id="acor3">
 <label for="acor3">AppImageLauncher</label>
 <div class="acor-body">
 <p>Установка исполняемых файлов .AppImage</p>
 <img src="data/img/2.png" alt="Astra AppImageLauncher">
 <br>
-<p>Пользоваться ей очень просто-качаем, делаем его исполняем, запускаем, при запуске указываем Appimage и икону для запуска</p>
+<p>Пользоваться ей очень просто-качаем, делаем его <a href="#exe" target="_self">исполняем</a>, запускаем, при запуске указываем Appimage и икону для запуска</p>
 <p>После нажатия на кнопку "Создать" на рабочем столе появиться ярлык запуска программы. Сам файл Appimage будет храниться в папке "Aplication" вашего хомяка.</p>
 <br>
-<a href="data/files/AppImageLauncher.AppImage" class="tag orange">AppImageLauncher</a>
+<a href="data/files/AppImageLauncher.AppImage" class="tag orange" title="AppImageLauncher">Скачать</a>
 </div>
-
+</section>
+<section>
 <input type="radio" name="acor" id="acor4" checked="checked">
 <label for="acor4">Calculator</label>
 <div class="acor-body">
@@ -128,9 +134,10 @@ accurateTrackBounce:true
 <img src="data/img/3.png" alt="Astra Calculator">
 <br>
 <br>
-<a href="data/files/Calculator.AppImage" class="tag orange">Calculator</a>
+<a href="data/files/Calculator.AppImage" class="tag orange" title="Calculator">Скачать</a>
 </div>
-
+</section>
+<section>
 <input type="radio" name="acor" id="acor5">
 <label for="acor5">FreeUPX</label>
 <div class="acor-body">
@@ -138,9 +145,10 @@ accurateTrackBounce:true
 <img src="data/img/4.png" alt="Astra FreeUPX">
 <br>
 <br>
-<a href="data/files/Free-UPX.AppImage" class="tag orange">FreeUPX Launcher</a>
+<a href="data/files/Free-UPX.AppImage" class="tag orange" title="FreeUPX">Скачать</a>
 </div>
-
+</section>
+<section>
 <input type="radio" name="acor" id="acor6">
 <label for="acor6">CalcFOE</label>
 <div class="acor-body">
@@ -148,9 +156,12 @@ accurateTrackBounce:true
 <img src="data/img/5.png" alt="Astra CalcFOE">
 <br>
 <br>
-<a href="data/files/Calc-Foe.AppImage" class="tag">CalcFOE Launcher</a>
+<a href="data/files/Calc-Foe.AppImage" class="tag" title="CalcFOE">Скачать</a>
+<a href="#exe" target="_self">Как сделать файл исполняем в Astra Linux</a>
 </div>
+</section>
 <!--  -->
+<section>
 <input type="radio" name="acor" id="acor7">
 <label for="acor7">Ссылки чтобы не искать программы</label>
 <div class="acor-body">
@@ -158,6 +169,7 @@ accurateTrackBounce:true
 <a href=" https://www.qbittorrent.org/" class="tag">Лучший торрент</a>
 <a href=" https://mpv.io/" class="tag">MPV</a>
 </div>
+</section>
 </div>
 <!--  -->
 <br>
@@ -171,10 +183,18 @@ accurateTrackBounce:true
 </div>
 <!--  -->
 <hr class="fat">
+<div class="clearfix"></div>
 <!-- Footer -->
 <footer class="footer">
 <address>@ lepasa.ru</address>
-<center><a href="https://zyaliz.github.io/site/" class="tag orange">Astra Linux</a></center>
+<div class="footer-down-section">
+
+
+
+</div>
+<div class="footer-logo-copyright">
+</div>
+<center><a href="#top" class="tag orange" target="_self">Наверх</a></center>
 </footer>
 <!--  -->
 </body>
