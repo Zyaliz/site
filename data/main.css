@@ -1,3 +1,9 @@
+/*------------
+   MAIN
+------------*/
+/*
+*{-webkit-user-Select:none;-khtml-user-Select:none;-moz-user-Select:none;-ms-user-Select:none;user-Select:none;}
+*/
 html{
 font-family:Arial,Helvetica,sans-serif;
 line-height:1.15;
@@ -19,23 +25,18 @@ border-top: 4px solid #009688;
 border-bottom: 4px solid #FF9828;
 /* position: fixed; */
 }
-a{text-decoration:none; color: #1e6bb8;}
-/*-- CSS. --*/
-.link_button {
-  padding: 1px 3px;
-  border: 1px solid #CDECD3;
-  background: #E9FFEE;
-  border-radius: 6px;
+/* не посещенная ссылка */
+a{
+font-weight: 100;
+color: #1e6bb8;
+background-color: inherit;
+text-decoration:none;
 }
-.link_button:hover {
-  background: black;
-  color: #fff;
-}
-.link_button:active {
-  color: red;
-}
+/*
+a:visited {color:#FFFF00;} /* посещенная ссылка */
+/*a:hover {color:#FF0000;font-size: 110%;} /* ссылка при наведении на нее мышкой */
+/*a:active {color:#сссссс;} /* нажатая ссылка */
 /* background-color: transparent; */
-/* latin */
 @font-face{
 font-family: 'Monoton';
 font-style: normal;
@@ -48,13 +49,34 @@ font-style: normal;
 font-weight: 400;
 src: url(../data/src/fyodor-bold-oblique.woff2) format('woff2');
 }
-
+/*------------
+   CONTAINER
+------------*/
 .container{
 padding: 0 30px;
 font-size: 16pt;
 }
 .container p{
+margin-top: 3em;
 font-size: 16px;
+text-indent: 20px;
+}
+.container h4{
+font-size: 20px;
+line-height: 24px;
+margin: 0 0 15px;
+}
+.container code{
+display: inline-block;
+padding: 5px 10px;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+background-color: #f3f3f3;
+color: #757575;
+font-size: 14px;
+font-size: 1.4rem;
+    font-family: monospace,monospace;
+    font-size: 1em;
 }
 .name{
 text-align: center;
@@ -87,7 +109,17 @@ background: -webkit-linear-gradient(to left,#5c258d ,#4389a2);
 background: linear-gradient(120deg,#5c258d ,#4389a2);
 */
 }
-
+.link_button, .button{
+color: #1e6bb8;
+background-color: inherit;
+text-decoration:none;
+}
+.link_button:hover{
+color: #8e6bb8;
+}
+.link_button:active{
+color: #8e9bb8;
+}
 
 hr.fat{
 position: relative;
@@ -96,13 +128,9 @@ background-color: #05519d;
 margin: 0 auto;
 padding: 0;
 }
-footer{
-margin-top: 120px;
-padding: 30px 60px;
-background: #2C3541;
-color: #fff;
-border-top: 4px solid #FF9828;
-border-bottom: 4px solid #009688;
+.clearfix:after{
+clear: both;
+display: block;
 }
 .h{
 margin-top: 0px;
@@ -129,6 +157,34 @@ color: #fff;
 }
 .tag:active{color: red;}
 .orange{background-color: #e45c21;}
+
+.noselect{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+/*------------
+   FOOTER
+------------*/
+footer{
+margin-top: 120px;
+padding: 30px 60px;
+background: #2C3541;
+color: #fff;
+border-top: 4px solid #FF9828;
+border-bottom: 4px solid #009688;
+}
+.footer-down-section {
+padding: 30px 0 15px;
+border-bottom: 1px solid #4A4A4A;
+text-align: center;
+}
+.footer-logo-copyright{
+padding: 20px 0 62px;
+}
 /*------------
    ACOR
 ------------*/
