@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Astra Linux</title>
+<meta name="description" content="astralinux astra linux">
+<meta name="keywords" content="astralinux astra linux">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="sashok" >
+<meta name="copyright" content="(c) Lepasa 2022">
+<link rel="shortcut icon" type="image/png" href="data/img/favicon.png">
+<!--
+<link rel="stylesheet" href="data/reboot.css">
+-->
+<link rel="stylesheet" href="data/main.css">
+<base target="_blank">
+<meta name="robots" content="all">
+</head>
+<!--  -->
+<body>
+<!-- Header -->
+<a name="top"></a>
+<header>
+<h1 class="name noselect"><a href="https://astralinux.ru/" rel="noreferrer noopener">Astra Linux</a></h1>
+<h2 class="name-2">Учимся работать в Astra Linux</h2>
+</header>
+<!--
+<a href="https://www.startisback.com"><img src="clover.svg" width="32" height="32" title="StartIsBack for Windows 10"></a>
+-->
+<!--  -->
+<!-- Menu -->
+<!--
+<section class="page-header">
+</section>
+-->
+
+
+<!--  -->
+<div class="container">
+<br>
+<h2>Расширение файла <strong>AppImage</strong></h2>
+<br>
+<strong>AppImage</strong> &#8212; это переносимый, исполняемый файл приложения для <strong>Linux</strong>, аналог <strong>.exe</strong> в <strong>Windows</strong>
+<br>
+Программы в этом формате размещаются на этом сайте или найдёте их здесь
+<a href="https://appimage.github.io" class="link_button" rel="noreferrer noopener">appimage.github.io</a>
+<br>
+Формат <strong>AppImage</strong> это система запуска приложений для <strong>Linux</strong> преследующая цели: <b>простота в использовании, совместимость со всеми Linux, независимость от дистрибутива, запуск без установки, запуск без root прав, переносимость файла <strong>AppImage</strong> и сохранение операционной системы без изменений</b>.<br>
+При удалении файда <strong>AppImage</strong> удаляется и само приложение.
+Прежде чем запустить скачанный файл <strong>AppImage</strong> необходимо сделать его 
+<a href="#exe" class="link_button" target="_self">исполняем</a>.
+<br>
+<!--  -->
+<div class="acor-container">
+<input type="radio" name="acor" id="acor1" checked="checked">
+<label for="acor1">Настройка Astra Linux после установки</label>
+<div class="acor-body">
+<p>Запускаем терминал и поочерёдно вводим следующие команды:</p>
+<p>sudo nano /etc/apt/sources.list</p>
+<p>Добавляем указанные 5 репозиториев в открытый файл и сохраняем его.</p>
+<p style="color:green;">deb https://download.astralinux.ru/astra/stable/1.7_x86-64/repository-main/ 1.7_x86-64 main contrib non-free</p>
+<p style="color:green;">deb https://download.astralinux.ru/astra/stable/1.7_x86-64/repository-update/ 1.7_x86-64 main contrib non-free</p>
+
+<p style="color:green;">deb https://download.astralinux.ru/astra/stable/1.7_x86-64/repository-base/ 1.7_x86-64 main contrib non-free</p>
+<p style="color:green;">deb https://download.astralinux.ru/astra/stable/1.7_x86-64/repository-extended/ 1.7_x86-64 main contrib non-free</p>
+<p style="color:green;">deb https://mirror.yandex.ru/debian/ stretch main contrib non-free</p>
+<p>Вставить CTRL +O;  Сохранить CTRL +S;  Enter; Выйти CTRL +X</p>
+<br>
+<br>
+<p style="color:green;">sudo apt install nvidia-driver-470</p>
+<p>sudo apt install --reinstall intel-microcode</p>
+<p style="color:green;">sudo apt install ttf-mscorefonts-installer</p>
+<p>sudo apt install ffmpeg bluefish gcolor2 fbreader doublecmd-qt neofetch htop fly-calc -y</p>
+<p style="color:green;">sudo apt install qmmp clementine -y</p>
+<p>В случае ошибки:</p>
+<p>sudo apt-get install -f</p>
+<p>sudo apt-get install gcc g++ libc6-dev libsdl1.2-dev libgtk-3-dev unixodbc-dev libgnome2-dev libxine2-dev libwebkitgtk-3.0-dev libxxf86vm-dev libwebkitgtk-dev libwebkitgtk-3.0-dev</p>
+<p>Обновляем списки пакетов из репозиториев</p>
+<p>sudo apt update</p>
+<p>Обновляем все установленные пакеты до новых версий</p>
+<p>sudo apt -y upgrade</p>
+<p>Или одной командой:</p>
+<p>sudo apt update && apt upgrade</p>
+<br>
+<p>Включаем WebRender в Firefox</p>
+<p>about:config</p>
+<p>gfx.webrender.all		ставим на true</p>
+<p>widget.wayland-dmabuf-vaapi		ставим на true</p>
+<p>widget.wayland-dmabuf-vaapi.enabled			ставим на true</p>
+<p>about:support</p>
+</div>
+<!--  -->
+<section>
+<a name="exe"></a>
+<input type="radio" name="acor" id="acor2" checked="checked">
+<label for="acor2">Как сделать файл исполняем в Astra Linux</label>
+<div class="acor-body">
+<p>Сделать файл исполняемым для запуска можно с помощью графической оболочки.</p>
+<p>Нажмите по файлу правой кнопкой мыши. В контекстуальном меню выберите пункт «Свойства».</p>
+<p>Открывшееся окно должно содержать вкладку «Дискреционные атрибуты», в котором нужно активировать правый пункт «Обычные».</p>
+<p>Теперь разрешено выполненять данный файл как программу</p>
+<img src="data/img/1.png" alt="Делаем файл исполняем в Astra Linux">
+<br>
+<br>
+<p>Либо сделать файл исполняемым для запуска можно с помощью терминала.</p>
+<p>chmod +x имя_файла</p>
+<p>или</p>
+<p>sudo chmod +x имя_файла</p>
+</div>
+</section>
+<!--  -->
+<section>
+<input type="radio" name="acor" id="acor3">
+<label for="acor3">Create-Link</label>
+<div class="acor-body">
+<p>Создание ярлыков для исполняемых файлов и папок</p>
+<img src="data/img/2.png" alt="Установка исполняемых файлов">
+<br>
+<br>
+<p>Пользоваться ей очень просто-качаем, делаем его <a href="#exe" class="link_button" target="_self">исполняем</a>, запускаем, при запуске указываем Appimage и икону для запуска</p>
+<p>После нажатия на кнопку "Создать" на рабочем столе появиться ярлык запуска программы. Сам файл Appimage будет храниться в папке "AppDir" вашего хомяка.</p>
+<br>
+<a href="data/files/Create-Link.tar.gz" class="tag orange" title="Create-Link">Скачать</a>
+</div>
+</section>
+<!--  -->
+<section>
+<input type="radio" name="acor" id="acor4" checked="checked">
+<label for="acor4">Create-DEB</label>
+<div class="acor-body">
+<p>Сборка пакетов DEB</p>
+<img src="data/img/3.png" alt="Сборка пакетов DEB">
+<br>
+<br>
+<p>Приложение необходимо для интеграции Appimage файла в систему с помощью создания DEB пакета.</p
+<br>
+<a href="data/files/Create-DEB.tar.gz" class="tag orange" title="Create-DEB">Скачать</a>
+</div>
+</section>
+<!--  -->
+<section>
+<input type="radio" name="acor" id="acor5">
+<label for="acor5">Free-UPX</label>
+<div class="acor-body">
+<p>Сжатие исполняемых файлов</p>
+<img src="data/img/4.png" alt="Упаковщик исполняемых файлов">
+<br>
+<br>
+<a href="data/files/Free-UPX.tar.gz" class="tag orange" title="Free-UPX">Скачать</a>
+</div>
+</section>
+<!--  -->
+<section>
+<input type="radio" name="acor" id="acor6">
+<label for="acor6">CalcFOE</label>
+<div class="acor-body">
+<p>Калькулятор для игры Forge of Empire</p>
+<img src="data/img/5.png" alt="Калькулятор для игры Forge of Empire">
+<br>
+<br>
+<a href="data/files/calcfoe-1.37.214-ru.deb" class="tag" title="CalcFOE">Скачать</a>
+<a href="#exe" class="link_button" target="_self">Как сделать файл исполняем в Astra Linux</a>
+</div>
+</section>
+<!--  -->
+<section>
+<input type="radio" name="acor" id="acor7">
+<label for="acor7">Colors</label>
+<div class="acor-body">
+<p>Инструмент выбора цвета</p>
+<img src="data/img/7.png" alt="Упаковщик исполняемых файлов">
+<br>
+<br>
+<a href="data/files/Colors.tar.gz" class="tag orange" title="Colors">Скачать</a>
+</div>
+</section>
+<!--  -->
+<section>
+<input type="radio" name="acor" id="acor8">
+<label for="acor8">Ссылки чтобы не искать программы</label>
+<div class="acor-body">
+<a href="https://www.7-zip.org/" class="tag">Лучший архиватор</a>
+<a href=" https://www.qbittorrent.org/" class="tag">Лучший торрент</a>
+<a href=" https://mpv.io/" class="tag">MPV</a>
+</div>
+</section>
+<section>
+<!--  -->
+<section>
+<input type="radio" name="acor" id="acor9">
+<label for="acor9">PureBasic</label>
+<div class="acor-body">
+<p>PureBasic</p>
+<img src="data/img/9.png" alt="Среда разработки">
+<br>
+<br>
+<p>Среда разработки PureBasic с помощь которой написаны эти программы</p>
+<p>Файл Create.sh сделать исполняемым и запустить.<p>
+<br>
+<a href="data/files/Merge.sh" class="tag orange" title="PureBasic">Скачать</a>
+</div>
+</section>
+<!--  -->
+</div>
+<!--  -->
+<br>
+<br>
+<p>Для удаления установленной программы достаточно удалить папку с именем установленной программы в папке AppDir домашнего каталога</p>
+<p>Теперь вы знаете, как интегрировать, запустить и удалить файлы <b>AppImage</b> с помощью <b>Create-Link</b> и <b>Create-DEB</b> в <b>Linux</b>.</p>
+<br>
+<br>
+Удачи.<br>
+<br>
+
+
+</div>
+<!--  -->
+<hr class="fat">
+<div class="clearfix"></div>
+<!-- Footer -->
+<footer class="footer">
+<address>@ lepasa.ru</address>
+<div class="footer-down-section">
+
+
+
+</div>
+<div class="footer-logo-copyright">
+</div>
+<center><a href="#top" class="tag orange" target="_self">Наверх</a></center>
+</footer>
+<!--  -->
+</body>
+<!--
+-->
+</html>
