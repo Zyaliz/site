@@ -199,8 +199,13 @@
 <br>
 <a href="data/files/Merge.sh" class="tag orange" title="PureBasic">Скачать</a>
 <br>
-<p>Установим необходимые пакеты для работы PureBasic<p>
-<p>sudo apt install libxine2-dev libxine2-x libxine2 mesa-vdpau-drivers<p>
+<p>Для компиляции нужно установить ряд пакетов. В первую очередь libgtk2.0-dev и libgtk-3-dev. Остальные обычно не нужны. Команда установки для терминала:</p>
+<p>sudo apt install gcc g++ libc6-dev libsdl1.2-dev libgtk2.0-dev libgtk-3-dev libgnomeprint2.2-dev unixodbc-dev libgnome2-dev libxine-dev libgnomeprintui2.2-dev libxxf86vm-dev -y</p>
+<p>Если появится ошибка при установке то этот пакет у вас уже установлен. Чтобы исключить ошибки устанавливайте пакеты по одному или<p>
+<p>в скачанной директории purebasic/ делаем исполняемым файл checkinstall.sh и запускаем его. Установятся вышеуказанные пакеты.</p>
+<p>Устанавливаем пакеты для работы с мультимедиа.</p>
+<p>sudo apt install libxine2-dev libxine2-x libxine2 mesa-vdpau-drivers -y<p>
+<p>Так-же можно перейти по ссылкам и решить проблему.</p>
 <p><a href="https://www.purebasic.fr/english/viewtopic.php?p=551178#p551178" rel="noreferrer noopener">Simple install of PureBasic (Ubuntu, Mint, Raspberry)</a></p>
 <p><a href="https://www.purebasic.fr/english/viewtopic.php?t=77188" rel="noreferrer noopener">Associate pb Files to purebasic how to ?</a></p>
 </div>
